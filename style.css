@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: gold;
+    flex-wrap: wrap;
+    min-height: 50px;
+    border-bottom: 2px solid black;
+}
+.header h1 {
+    color: #000;
+    margin-left: 40px;
+    padding-top:10px;
+}
+
+.nav {
+    margin-top: 10px;
+    padding-top:10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-right: 10px;
+    padding: 5px 5px;
+
+}
+
+.nav a:hover {
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #000;
+    color: gold;
+    transition: 0.7s ease;
+}
+
+.section-presentation {
+    background-color: gold;
+    padding: 30px 20px; 
+    text-align: center;
+    color: #000; 
+  }
+  
+  .presentation {
+    max-width: 800px;
+    margin: 0 auto; 
+  }
+  
+  .presentation h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+  }
+  
+  .presentation p {
+    font-size: 1.2rem;
+    line-height: 1.6; 
+  }
+  /* CSS for the animation */
+.presentation {
+  opacity: 0; 
+  animation: fadeInAnimation 3s ease forwards; 
+}
+
+
+@keyframes fadeInAnimation {
+  from {
+      opacity: 0; 
+      transform: translateX(-1000px); 
+  }
+  to {
+      opacity: 1; 
+      transform: translateX(0); 
+  }
+}
+  .image-presentation{
+    background-image: url("../images/pexels-mart-production-7706562.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 400px; 
+    padding: 60px 20px; 
+  }
+  #about{
+    text-align: center;
+    background-color:gold;
+    color: #000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    min-height: 200px; 
+    padding: 60px 20px; 
+  }
+  #about h1{
+    font-size:40px;
+  }
+  #about h2,
+  #about p {
+    margin-bottom: 20px; 
+  }
+  
+  
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: black;
+    
+}
+.title{
+    color: gold;
+    font-size: 50px;
+}
+.title-order{
+  color:gold;
+  font-size:25px;
+}
+
+
+.service-card{
+    background-color: black;
+    min-height: 14em;
+    width: 15em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+    text-align: center;
+}
+.service-image img{
+    width: 100%;
+    height:200px;
+}
+
+.service-type{
+    font-size: 1.3em;
+    color:gold;
+    padding: 0 5px;
+    text-decoration: none;
+}
+.service-type:hover{
+  background-color: gold;
+  color:#000;
+  border-radius: 10px;
+  border:2px solid gold;
+  transition: 0.7s ease;
+}
+ #allservices{
+    padding: 10px 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+footer{
+    background-color: gold;
+    text-align: center;
+    padding-top:20px;
+}
+footer ul{
+    margin-top:20px;
+}
+footer ul li{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-copy{
+    padding:30px 0;
+}
+
+/* Mobile Styles */
+
+/* General adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+  }
+  
+  .header h1 {
+    margin-left: 0;
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  .nav {
+    padding-top: 10px;
+    margin-top: 0;
+  }
+
+  .nav a {
+    margin: 5px;
+    padding: 8px;
+    display: block;
+    text-align: center;
+  }
+  
+  .section-presentation {
+    padding: 40px 20px; 
+  }
+  
+  .presentation h1 {
+    font-size: 2rem; 
+  }
+
+  .image-presentation {
+    min-height: 300px; 
+    padding: 40px 20px; 
+  }
+
+  #about {
+    padding: 40px 20px;
+  }
+  
+  .services {
+    height: auto;
+    padding: 30px 20px;
+  }
+  
+  .service-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .service-image img {
+    width: 50%; /* Adjust this value to resize the image within the service card */
+    max-height: 150px; /* Define the maximum height for the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the space */
+  }
+  
+  
+  footer ul {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-copy {
+    padding: 20px 0;
+  }
+}
+
+
